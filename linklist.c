@@ -4,7 +4,7 @@
 
 void print_list(struct node *here){
 	while (here -> next){
-		printf("%d ",here -> i)
+		printf("%d ",here -> i);
 	}
 }
 
@@ -15,8 +15,8 @@ struct node * insert_front(struct node * frist, int n){
 }
 
 struct node * free_list(struct node * prisoner){
-	while (*prisoner){
-		prisoner.free();
+	while (prisoner -> next){
+		free(prisoner);
 	}
 }
 
