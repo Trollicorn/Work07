@@ -8,12 +8,17 @@ int main(){
 	test->i = 6;
 	test->next = NULL;
 
-	struct node *fr = insert_front(test,23);
+	printf("should have 6: ");
+	print_list(test);
 
-	print_list(fr);
-	struct node *hm = free_list(fr);
-	print_list(fr);
-	print_list(hm);
+	test = insert_front(test,23);
+	printf("should have 23 6");
+	print_list(test);
+
+	test = insert_front(test,9);
+	printf("should have 9 23 6");
+	print_list(test);
+
 	return 0;
 }
 
