@@ -12,11 +12,11 @@ int main(){
 	print_list(test);
 
 	test = insert_front(test,23);
-	printf("should have 23 6");
+	printf("should have 23 6: ");
 	print_list(test);
 
 	test = insert_front(test,9);
-	printf("should have 9 23 6");
+	printf("should have 9 23 6: ");
 	print_list(test);
 
 	return 0;
