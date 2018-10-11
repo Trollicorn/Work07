@@ -25,7 +25,7 @@ struct node * free_list(struct node * prisoner){
 		prisoner = criminal;
 	}
 	free(prisoner);
-	return re;
+	return NULL;
 }
 
 
