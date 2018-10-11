@@ -19,6 +19,7 @@ int main(){
 	printf("should have 9 23 6: ");
 	print_list(test);
 
+	
 	return 0;
 }
 
